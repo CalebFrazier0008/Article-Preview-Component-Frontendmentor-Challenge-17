@@ -1,0 +1,422 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Manrope", sans-serif;
+}
+.Bottom-2 {
+  display: none;
+}
+#Block {
+  display: none;
+}
+#Arrow {
+  display: none;
+}
+.Container {
+  height: 100vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  height: 575px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 320px;
+  width: 100vw;
+  max-width: 375px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Top {
+  height: 40%;
+  width: 100%;
+  background-color: red;
+}
+.Top > img {
+  height: 100%;
+  width: 100%;
+}
+.Mid {
+  height: 45%;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 40px;
+}
+h3 {
+  margin-top: 15px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.Mid > p {
+  color: hsl(212, 23%, 69%);
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.Bottom {
+  height: 15%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+#Share-Box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  background-color: hsl(217, 19%, 35%);
+  gap: 20px;
+  transition: all 0.2s;
+  overflow: hidden;
+  z-index: -1;
+}
+#Share-Box > h3 {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 5px;
+  font-weight: 500;
+  margin: 0px;
+}
+#Share-Box > svg:hover {
+  cursor: pointer;
+  path {
+    fill: rgb(32, 32, 56);
+  }
+}
+.Share-Active {
+  transition: all 0.2s;
+}
+
+.Hi,
+.Hi * {
+  display: none;
+}
+.Profile {
+  transform: translateY(-100%);
+}
+#Profile-1 {
+  background-color: white;
+
+  height: 100%;
+  width: 100%;
+  z-index: ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+#Profile-1 > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 40px;
+}
+.Name {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  margin-left: 20px;
+  display: inherit;
+}
+h4 {
+  font-size: 15px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.Name > p {
+  color: hsl(212, 23%, 69%);
+  font-size: 15px;
+  font-weight: 500;
+}
+#Share-1 {
+  position: relative;
+  right: 0px;
+  color: hsl(214, 17%, 51%);
+  background-color: hsl(210, 46%, 95%);
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 40px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+#Share-1:hover {
+  cursor: pointer;
+  color: black;
+  background-color: hsl(217, 19%, 35%) !important;
+  path {
+    fill: white;
+  }
+}
+
+#Profile-1 > .Clicked {
+  background-color: hsl(214, 17%, 51%);
+  top: 85px;
+  /* transform: translateY(200%); Adds a Bounce effect */
+  path {
+    fill: white;
+  }
+}
+.Clicked:hover {
+}
+/* .Share-Active {
+  transition: all 2s;
+  transform: translateY(20px);
+} */
+@media only screen and (max-width: 403px) {
+  .Card {
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 320px;
+    width: 100vw;
+    max-width: 375px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #Share-Box {
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Container {
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Card {
+    position: relative;
+    height: 325px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 320px;
+    width: 100vw;
+    max-width: 800px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: visible;
+    box-shadow: darkgray 0px 5px 20px 0px;
+  }
+  .Top {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .Top > img {
+    height: 100%;
+    width: 110%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .Mid {
+    position: absolute;
+    left: 325px;
+    bottom: 00px;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-left: 40px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  h3 {
+    margin-top: 15px;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .Mid > h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .Bottom {
+    display: none;
+  }
+  .Bottom {
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .Bottom-2 {
+    display: block;
+    margin-top: 200px;
+    margin-right: 70px;
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+  }
+  #Share-Box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    background-color: hsl(217, 19%, 35%);
+    gap: 20px;
+    transition: all 0.2s;
+    overflow: visible;
+    z-index: -1;
+  }
+  #Block > h3 {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  #Block > svg:hover {
+    cursor: pointer;
+    path {
+      fill: rgb(32, 32, 56);
+    }
+  }
+  #Profile-2 {
+    background-color: white;
+
+    height: 100%;
+    width: 120%;
+    z-index: ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.2s;
+  }
+  #Profile-2 > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  #Profile-2 > .Clicked {
+    background-color: hsl(214, 17%, 51%);
+    top: 0px;
+    /* transform: translateY(200%); Adds a Bounce effect */
+    path {
+      fill: white;
+    }
+  }
+  #Share-3 {
+    position: relative;
+    right: 0px;
+    color: hsl(214, 17%, 51%);
+    background-color: hsl(210, 46%, 95%);
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 40px;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  #Share-3:hover {
+    cursor: pointer;
+    color: black;
+    background-color: hsl(217, 19%, 35%) !important;
+    path {
+      fill: white;
+    }
+  }
+  #Profile-1 > .Clicked {
+    background-color: hsl(214, 17%, 51%);
+    /* transform: translateY(200%); Adds a Bounce effect */
+    path {
+      fill: white;
+    }
+  }
+  #Block {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    left: 293px;
+    bottom: -10px;
+    width: 250px;
+    height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    transition: all ease-in-out 0.2s;
+    opacity: 0%;
+  }
+  .Block-Up {
+    bottom: 110px !important;
+    opacity: 100% !important;
+  }
+  #Arrow {
+    display: block;
+    position: absolute;
+    left: 403px;
+    bottom: 0px;
+    width: 250px;
+    height: 50px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-top: 15px solid hsl(217, 19%, 35%);
+    opacity: 0%;
+    transition: all ease-in-out 0.2s;
+  }
+  .Arrow-Up {
+    bottom: 100px !important;
+    opacity: 100% !important;
+  }
+  .Center {
+    width: 10px;
+    height: 100%;
+    background-color: blue;
+  }
+}
